@@ -1,18 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import MenuCard from "./MenuCard";
 import "./style.css";
+import Menu from "./MenuApi";
 
 const Resturant = () => {
+  const [menuData, setMenuData] = useState(Menu);
   return (
     <>
-      <div className="card-container">
-        <div className="card">
-          <div className="card-body">
-            <span className="card-number card-circle subtle">1</span>
-            <span className="card-author subtle">Breakfast</span>
-            <span className="card-title">Waiwai</span>
-          </div>
-        </div>
-      </div>
+      <MenuCard menuData={menuData} />
     </>
   );
 };
