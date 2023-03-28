@@ -5,6 +5,7 @@ import Menu from "./MenuApi";
 
 const Resturant = () => {
   const [menuData, setMenuData] = useState(Menu);
+  console.log(menuData);
   return (
     <>
       <MenuCard menuData={menuData} />
@@ -13,3 +14,4 @@ const Resturant = () => {
 };
 
 export default Resturant;
+ 
