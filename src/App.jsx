@@ -1,9 +1,9 @@
-import Resturant from "./component/Basics/Resturant";
+import Restaurant from "./component/Basics/Restaurant";
 
 function App() {
   return (
     <>
-      <Resturant />
+      <Restaurant />
     </>
   );
 }
